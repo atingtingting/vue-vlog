@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="App">
     <v-header></v-header>
     <router-view></router-view>
   </div>
 </template>
 
-<script>
+<script >
 import Header from './components/common/header'
 export default {
   name: 'App',

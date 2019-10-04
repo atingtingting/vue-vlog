@@ -3,7 +3,7 @@
         <el-avatar class="userHead">user</el-avatar>
         <div class="loginMsg">{{msg}}</div>
         <div class="searchBox">
-          <el-input size="small" placeholder="输入搜索内容" v-model="input" suffix-icon="el-icon-search"></el-input>
+          <el-input size="small" placeholder="输入搜索内容" v-model="input" prefix-icon="el-icon-search"></el-input>
           <el-button type="primary" size="mini" @click="handleIconClick" class="searchBut">搜索</el-button>
         </div>
         <div class="buts">
@@ -38,7 +38,8 @@ export default {
 #header {
   position: relative;
   height: 50px;
-  width: 100%;
+  // width: 100%;
+  min-width: 1150px;
   color: #58B7FF;
   background: #e8f3ff;
 }
