@@ -16,16 +16,22 @@
       layout="prev, pager, next, jumper"
       :total="1000">
     </el-pagination>
+    <pulish></pulish>
+    <user></user>
   </div>
   </div>
 </template>
 
 <script >
 import Assay from './common/assay'
+import Pulish from './common/publish'
+import User from './common/user'
 export default {
   name: 'home',
   components: {
-    'assay': Assay
+    'assay': Assay,
+    'pulish': Pulish,
+    'user': User
   },
   data () {
     return {

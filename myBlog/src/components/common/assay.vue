@@ -1,22 +1,20 @@
 <template>
     <div id="assay">
-      <div class="essayBox">
-        <h2>标题标题标题</h2>
-        <p class="time">最新发布时间：xxxxxxxxxx</p>
-        <el-image></el-image>
-        <el-image></el-image>
-        <el-image></el-image>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-        <div class="userBox">
-            <el-avatar size="small">匿</el-avatar>
-            <div>匿名</div>
-        </div>
-        <div class="col-com">
-            <el-button type="text" icon="el-icon-collection-tag"></el-button>
-            <el-button type="text" icon="el-icon-chat-dot-square"></el-button>
-        </div>
+      <h2>标题标题标题</h2>
+      <p class="time">最新发布时间：xxxxxxxxxx</p>
+      <el-image></el-image>
+      <el-image></el-image>
+      <el-image></el-image>
+      <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+      <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+      <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+      <div class="userBox">
+          <el-avatar size="small">匿</el-avatar>
+          <div>匿名</div>
+      </div>
+      <div class="col-com">
+          <el-button type="text" icon="el-icon-collection-tag"></el-button>
+          <el-button type="text" icon="el-icon-chat-dot-square"></el-button>
       </div>
     </div>
 </template>
@@ -31,14 +29,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.essayBox {
+#assay {
   position: relative;
   width: 95%;
   height: auto;
   margin: 10px auto;
   padding: 1px 0 30px 20px;
   box-sizing: border-box;
-  background: #fcfcfc;
+  border: 1px solid #58B7FF;
+  box-shadow: 1px 1px 0 #58B7FF;
   color: #335577;
   .time {
     color: #858585;

@@ -4,6 +4,10 @@ import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/login'
 import Reg from '@/components/registered'
 import Home from '@/components/home'
+import UserPage from '@/components/userPage'
+import Setting from '@/components/setting'
+import UserHome from '@/components/userHome'
+import UserData from '@/components/userData'
 
 Vue.use(Router)
 
@@ -29,6 +33,28 @@ export default new Router({
       path: '/home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/userPage',
+      name: 'userPage',
+      component: UserPage,
+      children: [
+        {
+          path: 'userHome',
+          name: 'userHome',
+          component: UserHome
+        },
+        {
+          path: 'setting',
+          name: 'setting',
+          component: Setting
+        },
+        {
+          path: 'userData',
+          name: 'userData',
+          component: UserData
+        }
+      ]
     },
     {
       path: '',
