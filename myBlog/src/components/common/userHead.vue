@@ -1,23 +1,26 @@
 <template>
     <div id="userHead">
-      <div class="buts">
-        <router-link to='/userPage/userData'>
-          <el-button type="text" icon="el-icon-user-solid"></el-button>
-        </router-link>
-        <router-link to='/userPage/setting'>
-          <el-button type="text" icon="el-icon-s-tools"></el-button>
-        </router-link>
+      <div class="square2"></div>
+      <div class="square">
+        <div class="buts">
+          <router-link to='/userPage/userData'>
+            <el-button type="text" icon="el-icon-user-solid"></el-button>
+          </router-link>
+          <router-link to='/userPage/setting'>
+            <el-button type="text" icon="el-icon-s-tools"></el-button>
+          </router-link>
+        </div>
+        <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
+        <div class="userMsg">
+          <h2>名字</h2>
+          <p>。。。。。。。。。。。。</p>
+        </div>
       </div>
-      <el-image
-      src='https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg'>
-      </el-image>
-      <div class="userMsg">
-        <h2>名字</h2>
-        <p>个人简介：。。。。。。。。。。。。。。。。。。。。。。。。。。。</p>
-        <span>博客：88</span>
-        <span>评论：88</span>
-        <span>收藏：88</span>
-      </div>
+      <div class="userData">
+          <div><i class="el-icon-tickets"></i>博客：88</div>
+          <div><i class="el-icon-chat-line-square"></i>评论：88</div>
+          <div><i class="el-icon-collection"></i>收藏：88</div>
+        </div>
     </div>
 </template>
 
@@ -41,10 +44,28 @@ export default {
   height: 250px;
   margin: 80px auto;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 0 #58B7FF;
-  border: 1px solid #58B7FF;
 }
-.el-image {
+.square {
+  position: relative;
+  left: -20px;
+  width: 70%;
+  height: 260px;
+  background: #e8f3ff;
+  .userMsg {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+  }
+}
+.square2 {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 80px;
+  height: 400px;
+  background: #e8f3ff;
+}
+.el-avatar {
   position: absolute;
   top: 50%;
   width: 200px;
@@ -52,23 +73,21 @@ export default {
   margin: -100px 0 0 30px;
   float: left;
 }
-.userMsg {
-  margin-left: 280px;
-  h2 {
-    font-size: 30px;
-  }
-  p {
-    margin-bottom: 45px;
-  }
-  span {
-    font-size: 20px;
-    margin-right: 30px;
+.userData {
+  position: absolute;
+  top: 0;
+  margin-left: 750px;
+  color: #e8f3ff;
+  div {
+    font-size: 50px;
+    margin-bottom: 30px;
   }
 }
 .buts {
   position: absolute;
-  right: 10px;
+  left: -60px;
   top: 0;
+  width: 50px;
   .el-button {
     font-size: 25px;
   }

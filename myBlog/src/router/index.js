@@ -8,6 +8,7 @@ import UserPage from '@/components/userPage'
 import Setting from '@/components/setting'
 import UserHome from '@/components/userHome'
 import UserData from '@/components/userData'
+import Editor from '@/components/editor'
 
 Vue.use(Router)
 
@@ -55,6 +56,11 @@ export default new Router({
           component: UserData
         }
       ]
+    },
+    {
+      path: '/editor',
+      name: 'editor',
+      component: Editor
     },
     {
       path: '',

@@ -7,7 +7,10 @@
           </el-tab-pane>
           <el-tab-pane label="收藏夹" name="second">
             <el-tabs tab-position="left" class="colTab">
-              <el-tab-pane label="收藏夹1">1</el-tab-pane>
+              <el-tab-pane label="收藏夹1">
+                <assay></assay>
+                <assay></assay>
+              </el-tab-pane>
               <el-tab-pane label="收藏夹2">2</el-tab-pane>
               <el-tab-pane label="收藏夹3">3</el-tab-pane>
             </el-tabs>

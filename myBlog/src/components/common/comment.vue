@@ -1,8 +1,6 @@
 <template>
     <div id="comment">
-      <el-image
-      src='https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg'>
-      </el-image>
+      <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
       <div class="commentMsg">
         <h5>用户 xxx 在 xxxxxxxxxxxxx 评论给你的博客 xxxxxx 评论了</h5>
         <p>。。。。。。。。</p>
@@ -28,7 +26,7 @@ export default {
   border: 1px solid #58B7FF;
   margin-bottom: 20px;
 }
-.el-image {
+.el-avatar {
   position: absolute;
   top: 50%;
   width: 60px;

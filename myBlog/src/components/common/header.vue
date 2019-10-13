@@ -38,7 +38,6 @@ export default {
 #header {
   position: relative;
   height: 50px;
-  // width: 100%;
   min-width: 1150px;
   color: #58B7FF;
   background: #e8f3ff;

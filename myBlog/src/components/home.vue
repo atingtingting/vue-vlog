@@ -16,7 +16,9 @@
       layout="prev, pager, next, jumper"
       :total="1000">
     </el-pagination>
-    <pulish></pulish>
+    <router-link to='/editor'>
+      <pulish></pulish>
+    </router-link>
     <user></user>
   </div>
   </div>
