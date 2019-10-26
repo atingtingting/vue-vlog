@@ -8,8 +8,8 @@
           <el-tab-pane label="收藏夹" name="second">
             <el-tabs tab-position="left" class="colTab">
               <el-tab-pane label="收藏夹1">
-                <assay></assay>
-                <assay></assay>
+                <col-assay></col-assay>
+                <col-assay></col-assay>
               </el-tab-pane>
               <el-tab-pane label="收藏夹2">2</el-tab-pane>
               <el-tab-pane label="收藏夹3">3</el-tab-pane>
@@ -25,15 +25,17 @@
 
 <script>
 import Assay from './common/assay'
+import ColAssay from './common/col-assay'
 import Comment from './common/comment'
 export default {
   data () {
     return {
-      activeName: 'second'
+      activeName: 'first'
     }
   },
   components: {
     'assay': Assay,
+    'col-assay': ColAssay,
     'comment': Comment
   }
 }

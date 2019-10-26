@@ -55,6 +55,7 @@ export default {
     position: absolute;
     left: 35%;
     top: 30%;
+    color: #357;
   }
 }
 .square2 {

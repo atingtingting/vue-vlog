@@ -13,6 +13,9 @@
                 <el-input type="password" v-model="newPas" placeholder="请输入新密码"></el-input>
               </el-form-item>
             </el-form>
+            <div class="buttonBox">
+              <el-button type="primary">修改密码</el-button>
+            </div>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -43,5 +46,8 @@ export default {
   .el-input {
     margin: 15px 0 15px 0;
   }
+}
+.buttonBox {
+  text-align: center;
 }
 </style>

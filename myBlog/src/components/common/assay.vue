@@ -105,7 +105,7 @@ export default {
   position: absolute;
   bottom: 0;
   right: 20px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .date {
   color: #e8f3ff;

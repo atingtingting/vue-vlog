@@ -19,7 +19,9 @@
     <router-link to='/editor'>
       <pulish></pulish>
     </router-link>
-    <user></user>
+    <router-link to='/userPage/userHome'>
+      <user></user>
+    </router-link>
   </div>
   </div>
 </template>

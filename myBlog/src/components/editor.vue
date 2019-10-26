@@ -7,6 +7,7 @@
             @blur="onEditorBlur($event)" @focus="onEditorFocus($event)"
             @change="onEditorChange($event)">
         </quill-editor>
+        <el-button type="primary">发表</el-button>
     </div>
 </template>
 
@@ -34,9 +35,12 @@ export default {
     height: auto;
     margin: 100px auto;
 }
+.el-button {
+  margin-top: 100px;
+}
 .quill-editor {
     line-height: normal !important;
-    height: 800px;
+    height: 600px;
   }
   .ql-snow .ql-tooltip[data-mode=link]::before {
     content: "请输入链接地址:";
