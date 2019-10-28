@@ -2,12 +2,15 @@
     <div id="userData">
       <el-tabs v-model="activeName" >
         <el-tab-pane label="修改资料" name="setData">
-          <el-form class="inputBox">
+          <div class="desBox">
+            <el-form >
               <el-form-item label="个人简介：" prop="userDescription">
-                <el-input type="textarea" v-model="userDescription" placeholder="描述..."></el-input>
+                <el-input type="textarea" v-model="userDescription" placeholder="描述..." maxlength="18"
+  show-word-limit></el-input>
               </el-form-item>
-          </el-form>
-          <el-button type="primary">确认修改</el-button>
+            </el-form>
+            <el-button type="primary">确认修改</el-button>
+          </div>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -27,5 +30,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.el-form {
+  margin-bottom: 30px;
+}
+.desBox {
+  margin: 20px 20px 30px 20px;
+}
 </style>

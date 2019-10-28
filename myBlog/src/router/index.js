@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/login'
 import Reg from '@/components/registered'
+import FindPas from '@/components/findPas'
 import Home from '@/components/home'
 import UserPage from '@/components/userPage'
 import Setting from '@/components/setting'
@@ -29,6 +30,11 @@ export default new Router({
       path: '/reg',
       name: 'Reg',
       component: Reg
+    },
+    {
+      path: '/findPas',
+      name: 'FindPas',
+      component: FindPas
     },
     {
       path: '/home',
